@@ -1,0 +1,9 @@
+6
+a a a a a a
+5
+a b b c c
+4
+a b c d
+14
+h h x x b x x x m m m m m h
+-1
