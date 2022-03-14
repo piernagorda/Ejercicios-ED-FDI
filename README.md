@@ -1,2 +1,2 @@
 # Ejercicios-ED-FDI
- Solved Exercises
+Ejercicios Resuletos de la asignatura ED
