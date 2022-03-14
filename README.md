@@ -1,2 +1,2 @@
 # Ejercicios-ED-FDI
-Ejercicios Resuletos de la asignatura ED
+Ejercicios Resueltos del Juez de ED
