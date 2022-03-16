@@ -1,2 +1,2 @@
 # Ejercicios-ED-FDI
- Solved Exercises
+Ejercicios Resueltos del Juez de ED
