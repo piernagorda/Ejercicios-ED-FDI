@@ -26,32 +26,28 @@ class double_linked_list_ed_plus: public double_linked_list_ed<T> {
 public:
 
 	void interseccion(double_linked_list_ed<T> &lista2) {
-		auto punteroA = this->front;
-		auto punteroAnteriorA = this->fantasma;
-		auto punteroB = lista2.front();
-		while (punteroA->sig != this->fantasma && punteroB != lista2.fantasma) {
-			if (punteroA->elem == punteroB->elem) {
-				punteroAnteriorA = punteroA;
+		auto punteroA = this->fantasma->sig;
+		while (punteroA != this->fantasma && !lista2.empty()) {
+			if ((punteroA->elem) < lista2.front()){
 				punteroA = punteroA->sig;
-				punteroB = punteroB->sig;
+				this->borra_elem(punteroA->ant);
 			}
-			else if (punteroA->elem < punteroB->elem) { //Tenemos que pasar del elemento de A y avanzar al siguiente
-				punteroAnteriorA->sig = punteroA->sig;
+			else if (punteroA->elem == lista2.front()) {
 				punteroA = punteroA->sig;
+				lista2.pop_front();
 			}
-			else {
-				punteroB=punteroB->sig;
-			}
+			else lista2.pop_front();
+		}
+		while (punteroA != this->fantasma) {
+			punteroA = punteroA->sig;
+			this->borra_elem(punteroA->ant);
 		}
 	}
 
 	void mostrarLista() {
-		if (!this->empty()) {
-			auto primero = this->front();
-			while (primero != this->fantasma) {
-				std::cout << (primero->elem) << " ";
-				primero = primero->sig;
-			}
+		while (!this->empty()) {
+			std::cout << this->front() << " ";
+			this->pop_front();
 		}
 		std::cout << "\n";
 	}
