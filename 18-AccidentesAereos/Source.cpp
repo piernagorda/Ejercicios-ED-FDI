@@ -17,12 +17,9 @@ bool resuelveCaso() {
 		std::string temp;
 		int tempMuertes;
 		std::cin >> temp >> tempMuertes;
+		while (!colaAccidentes.empty() && tempMuertes >= colaAccidentes.top().muertes) colaAccidentes.pop();
 		if (colaAccidentes.empty()) std::cout << "NO HAY \n";
-		else {
-			while (!colaAccidentes.empty() && tempMuertes >= colaAccidentes.top().muertes) colaAccidentes.pop();
-			if (colaAccidentes.empty()) std::cout << "NO HAY \n";
-			else std::cout << colaAccidentes.top().fecha << std::endl;
-		}
+		else std::cout << colaAccidentes.top().fecha << std::endl;
 		colaAccidentes.push({ temp, tempMuertes });
 	}
 	std::cout << "---\n";
