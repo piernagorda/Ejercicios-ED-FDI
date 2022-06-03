@@ -1,0 +1,25 @@
+fichar jugador1 equipo1
+fichar jugador2 equipo1
+ultimos_fichajes equipo1 3
+fichar jugador2 equipo2
+fichar jugador3 equipo1
+ultimos_fichajes equipo1 2
+fichar jugador1 equipo3
+fichar jugador4 equipo1
+cuantos_equipos jugador1
+fichados equipo1
+fichados equipo2
+equipo_actual jugador4
+fichar jugador5 equipo1
+fichar jugador4 equipo1
+ultimos_fichajes equipo1 8
+FIN
+fichados equipo2
+cuantos_equipos jugador1
+fichar jugador1 equipo1
+fichar jugador1 equipo2
+ultimos_fichajes equipo1 7
+ultimos_fichajes equipo2 7
+ultimos_fichajes equipo3 7
+equipo_actual jugador10
+FIN
